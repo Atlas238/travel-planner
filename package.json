@@ -1,0 +1,26 @@
+{
+  "name": "travel-planner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atlas238/travel-planner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atlas238/travel-planner/issues"
+  },
+  "homepage": "https://github.com/Atlas238/travel-planner#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express.js": "^1.0.0",
+    "mysql2": "^2.2.5"
+  }
+}
