@@ -13,7 +13,7 @@ router.get('/travellers', async (req, res) => {
 });
 
 // POST /api/travellers
-router.post('/travellers', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         const newTraveller = await Traveller.create(req.body);
         res.status(200).json(newTraveller);
@@ -24,7 +24,7 @@ router.post('/travellers', async (req, res) => {
 })
 
 // GET /api/travellers/:id
-router.get('/travellers/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
         const travellerById = await Traveller.findOne({ where: {id: req.body.id} });
         res.status(200).json(travellerById);
@@ -34,11 +34,13 @@ router.get('/travellers/:id', async (req, res) => {
 })
 
 // DELETE /api/travellers/:id
-router.delete('/travellers/:id', async (req, res) => {
+router.delete('/:id', async (req, res) => {
     try {
         const delTraveller = await Traveller.destroy({ where: {id: req.body.id} });
         res.status(200).json(delTraveller);
     } catch (err) {
         res.status(404).json(err);
     }
-})
+});
+
+module.exports = router;
