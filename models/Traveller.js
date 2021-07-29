@@ -17,7 +17,7 @@ Traveller.init(
             
         },
         email: {
-            type: DataTypes.VARCHAR,
+            type: DataTypes.STRING,
             allowNull: true,
 
         }
